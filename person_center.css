@@ -1,0 +1,349 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/person_center_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#head {
+	box-shadow: 1px 1px 1px 1px #cbcbcb;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 10%;
+	width: 100%;
+	background-color: white;
+}
+
+#head_logo {
+	height: 90%;
+	width: 5%;
+	background-image: url(../img/loginbtn.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	cursor: pointer;
+}
+
+#head_tab {
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#head_info {
+	height: 10%;
+	/* width: 15%; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#head_info div {
+	display: inline-block;
+}
+
+.tab_item {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.tab_item:hover {
+	box-shadow: 2px 2px 2px 2px #cbcbcb;
+}
+
+.quit {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #ff0000;
+	border: none;
+	color: #FFFFFF;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 16px;
+	padding: 6px;
+	width: 80px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 16px;
+	vertical-align: middle;
+}
+
+.quit span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.quit span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.quit:hover span {
+	padding-right: 25px;
+}
+
+.quit:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+#body {
+	height: 90%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#person_box {
+	height: 80%;
+	width: 50%;
+	background-color: rgba(38, 38, 38, 0.1);
+}
+
+#person_head {
+	height: 7%;
+	width: 100%;
+	background-color: rgba(38, 38, 38, 0.3);
+}
+
+#person_title {
+	color: white;
+	height: 100%;
+	width: 20%;
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "YouYuan";
+}
+
+#person_body {
+	height: 93%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+#person_left {
+	height: 100%;
+	width: 20%;
+	background-color: rgba(38, 38, 38, 0.2);
+}
+
+#left_img {
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+	overflow: hidden;
+	background-color: white;
+}
+
+#left_img img {
+	height: 100%;
+	width: 100%;
+	margin-top: 10%;
+}
+
+#left_head {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#left_info {
+	width: 100%;
+}
+
+#info_name {
+	color: white;
+	margin-top: 3%;
+	margin-bottom: 10%;
+}
+
+.left_tab_item {
+	height: 10%;
+	width: 100%;
+	border-bottom: 1px solid rgba(186, 186, 186, 0.3);
+	padding-top: 7%;
+	padding-bottom: 7%;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+
+.left_tab_item:hover {
+	background-color: rgba(107, 201, 185, 0.8);
+	cursor: pointer;
+}
+
+.item_define {
+	background-color: rgba(107, 201, 185, 0.8);
+}
+
+#person_right {
+	height: 100%;
+	width: 80%;
+}
+
+.right_item {
+	height: 23%;
+	width: 40%;
+	background-color: rgba(38, 38, 38, 0.2);
+	display: inline-block;
+	margin-left: 6%;
+	margin-top: 6%;
+}
+
+.right_title {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: "YouYuan";
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-color: rgba(38, 38, 38, 0.2);
+}
+
+.right_content {
+	width: 100%;
+	height: 81%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#right_base_info {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+#right_result_history {
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+#right_update_psd {
+	display: none;
+	height: 100%;
+	width: 100%;
+}
+
+.right_result{
+	width: 35%;
+	height: 35%;
+	background-color: rgba(38, 38, 38, 0.2);
+	display: inline-block;
+	margin-left: 10%;
+	margin-top: 6%;
+	margin-bottom: 5%;
+}
+
+.right_content2{
+	width: 100%;
+	height: 81%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "microsoft yahei";
+	font-weight: 1000;
+	font-size: 30px;
+}
+
+#right_listResult{
+	height: 45%;
+	width: 81%;
+	margin-left: 10%;
+	background-color: rgba(38, 38, 38, 0.2);
+}
+
+#result_head{
+	display: flex;
+	flex-direction: row;
+	height: 12%;
+	background-color: rgba(38, 38, 38, 0.4);
+}
+
+.head_tab{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 14px;
+}
+
+#history_title{
+	height: 6%;
+}
+
+#head_order{
+	width: 10%;
+	text-align: center;
+}
+
+#head_name{
+	width: 30%;
+	text-align: center;
+}
+
+#head_examtime{
+	width: 40%;
+	text-align: center;
+}
+
+#head_result{
+	width: 20%;
+	text-align: center;
+}
+
+#result_body{
+	width: 100%;
+	height: 78%;
+}
+
+.result_box{
+	display: flex;
+	flex-direction: row;
+	height: 24%;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}

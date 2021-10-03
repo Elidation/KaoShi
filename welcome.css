@@ -1,0 +1,135 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+}
+
+#head{
+	box-shadow: 1px 3px 3px 1px #cbcbcb;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 10%;
+	width: 100%;
+}
+
+#head_logo{
+	height: 90%;
+	width: 5%;
+	background-image: url(../img/loginbtn.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	cursor: pointer;
+}
+
+#body{
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: larger;
+	background-image: url(../img/welcome_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#body h2{
+	color: #435e62;
+}
+
+#body h1{
+	color: #a81c10;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#body h4{
+	color: #72341b;
+}
+
+#head_tab{
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#head_info{
+	height: 10%;
+	/* width: 15%; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#head_info div{
+	display: inline-block;
+}
+
+.tab_item{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.tab_item:hover{
+	box-shadow: 2px 2px 2px 2px #cbcbcb;
+}
+
+.quit {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ff0000;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  padding: 6px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 16px;
+  vertical-align:middle;
+}
+
+.quit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.quit span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.quit:hover span {
+  padding-right: 25px;
+}
+
+.quit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
