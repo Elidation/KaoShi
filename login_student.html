@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>考试系统</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<!-- 登录框 -->
+		<div id="login_box">
+			<div id="login_lay">
+				<div id="login_item">
+					<!-- 左侧列表 -->
+					<ul id="login_list">
+						<!-- 标签 -->
+						<li id="login_title">
+							<h3>学生登录</h3>
+						</li>
+						<hr />
+						<!-- 错误提示 -->
+						<p id="space" class="space_off">&nbsp;</p>
+						<p align="center" id="account_null" class="error_off">学号不能为空</p>
+						<p align="center" id="password_null" class="error_off">密码不能为空</p>
+						<p align="center" id="login_error" class="error_off">学号或密码错误，请确认您的学号与密码</p>
+						<p align="center" id="check_error" class="error_off">请阅读遵守相关规则并勾选</p>
+						<!-- 账户框 -->
+						<li id="username_input" class="login_list_item">
+							<input type="text" name="uasename" id="input_username" value="" maxlength="25" class="input_box" placeholder="学生学号" />
+						</li>
+						<!-- 密码框 -->
+						<li id="password_input" class="login_list_item">
+							<input type="password" name="password" id="input_password" value="" maxlength="25" class="input_box" placeholder="学生密码"/>
+						</li>
+						<!-- 准则勾选 -->
+						<li id="allow_rule">
+							<input type="checkbox" name="allow_role" id="check_allow" value="0" />
+							<span id="rule_text">我已阅读并同意遵守<a href="#" id="exam_rule">《隐私政策》</a>和<a href="#" id="exam_rule">《用户协议》</a></span>
+						</li>
+						<!-- 登录按钮 -->
+						<li id="login_button">
+							<input type="button" name="login" id="button_login" value="登录" />
+						</li>
+						<!-- 切换账户类型 -->
+						<li id="otherlogin">
+							<a href="login_teacher.html" id="way_otherlogin">教师登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

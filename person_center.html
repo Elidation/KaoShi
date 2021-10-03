@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>考试系统</title>
+		<link rel="stylesheet" type="text/css" href="css/person_center.css" />
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/person_center.js"></script>
+		<script type="text/javascript" src="js/welcome.js"></script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head_logo"></div>
+			<div id="head_tab">
+				<h3 id="exam_center" class="tab_item">考试中心</h3>
+				<h3 id="person_center" class="tab_item">个人中心</h3>
+			<!-- 	<h3 class="tab_item">消息中心</h3>
+				<h3 class="tab_item">设置中心</h3> -->
+			</div>
+			<div id="head_info">
+				<h5 id="say_time"></h5>
+				<h5 id="student_info">李小泽同学</h5>
+				<button class="quit"><span>登出</span></button>
+				<div id="time_box">
+					<h5 id="head_time" align="center"></h5>
+					<h5 id="head_date"></h5>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div id="person_box">
+				<div id="person_head">
+					<h4 id="person_title">个人中心</h4>
+				</div>
+				<div id="person_body">
+					<div id="person_left">
+						<div id="left_head" align="center">
+							<div id="left_img">
+								<img src="./img/user_img.png">
+							</div>
+							<h4 id="info_name">李小泽</h4>
+						</div>
+						<div id="left_tab">
+							<div id="base_info" class="left_tab_item item_define">基本信息</div>
+							<div id="result_history" class="left_tab_item">历史成绩</div>
+							<div id="update_psd" class="left_tab_item">修改密码</div>
+						</div>
+					</div>
+					<div id="person_right">
+						<div id="right_base_info">
+							<div id="right_name" class="right_item">
+								<div class="right_title">姓名</div>
+								<div class="right_content">李小泽</div>
+							</div>
+							<div id="right_num" class="right_item">
+								<div class="right_title">学号</div>
+								<div class="right_content">202100260324</div>
+							</div>
+							<div id="right_grade" class="right_item">
+								<div class="right_title">班级</div>
+								<div class="right_content">软件工程211</div>
+							</div>
+							<div id="right_sex" class="right_item">
+								<div class="right_title">性别</div>
+								<div class="right_content">男</div>
+							</div>
+						</div>
+						<div id="right_result_history">
+							<div id="right_maxResult" class="right_result">
+								<div class="right_title">最高成绩</div>
+								<div class="right_content2">100</div>
+							</div>
+							<div id="right_orderClass" class="right_result">
+								<div class="right_title">剩余考试次数</div>
+								<div class="right_content2">0</div>
+							</div>
+							<div id="right_listResult">
+								<div id="history_title" class="right_title">历史成绩</div>
+								<div id="result_head">
+									<div id="head_order" class="head_tab">序号</div>
+									<div id="head_name" class="head_tab">考试名称</div>
+									<div id="head_examtime" class="head_tab">考试时间</div>
+									<div id="head_result" class="head_tab">考试分数</div>
+						
+								</div>
+								<div id="result_body">
+									<div id="result1" class="result_box">
+										<div id="head_order" class="head_tab">1</div>
+										<div id="head_name" class="head_tab">Java程序设计</div>
+										<div id="head_examtime" class="head_tab">2021/09/25 16:00</div>
+										<div id="head_result" class="head_tab">58</div>
+					
+									</div>
+									<div id="result2" class="result_box">
+										<div id="head_order" class="head_tab">2</div>
+										<div id="head_name" class="head_tab">Java程序设计</div>
+										<div id="head_examtime" class="head_tab">2021/09/26 09:00</div>
+										<div id="head_result" class="head_tab">79</div>
+						
+									</div>
+									<div id="result3" class="result_box">
+										<div id="head_order" class="head_tab">3</div>
+										<div id="head_name" class="head_tab">Java程序设计</div>
+										<div id="head_examtime" class="head_tab">2021/09/27 15:30</div>
+										<div id="head_result" class="head_tab">100</div>
+						
+									</div>
+								<!-- 	<div id="result4" class="result_box">
+										<div id="head_order" class="head_tab">1</div>
+										<div id="head_name" class="head_tab">Java程序设计</div>
+										<div id="head_examtime" class="head_tab">2021/09/27</div>
+										<div id="head_result" class="head_tab">58</div>
+										<div id="head_update_man" class="head_tab">李华</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

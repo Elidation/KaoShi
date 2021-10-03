@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>考试系统</title>
+		<link rel="stylesheet" type="text/css" href="css/exam_update.css" />
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/exam_update.js"></script>
+	</head>
+	<body>
+		<!-- 修改密码框 -->
+		<div id="update_psd_box">
+			<div id="update_psd_lay">
+				<div id="update_psd_item">
+					<!-- 左侧列表 -->
+					<ul id="update_psd_list">
+						<!-- 标签 -->
+						<li id="update_psd_title">
+							<p id="back_p">
+								<img src="img/icon-back.png" id="back">返回
+							</p>
+							<h3>修改密码</h3>
+						</li>
+						<hr />
+						<!-- 错误提示 -->
+						<p id="space" class="space_off">&nbsp;</p>
+						<p align="center" id="current_null" class="error_off">当前密码不能为空</p>
+						<p align="center" id="new_null" class="error_off">新密码不能为空</p>
+						<p align="center" id="define_null" class="error_off">请重新确认密码</p>
+						<p align="center" id="new_define_error" class="error_off">请重新确认密码</p>
+						<p align="center" id="current_error" class="error_off">当前密码不正确</p>
+						<p align="center" id="new_current_error" class="error_off">新密码不能为当前密码</p>
+						<p align="center" id="check_error" class="error_off">请阅读遵守相关规则并勾选</p>
+						<!-- 当前密码框 -->
+						<li id="password_input" class="update_psd_list_item">
+							<input type="password" name="current_password" id="input_current_password" value=""
+								maxlength="25" class="input_box" placeholder="当前密码" />
+						</li>
+						<!-- 新密码框 -->
+						<li id="password_input" class="update_psd_list_item">
+							<input type="password" name="new_password" id="input_new_password" value="" maxlength="25"
+								class="input_box" placeholder="新密码" />
+							<div id="password_level">
+								<div class="level_box">
+									<p align="center" id="weak_space" class="level_space">&nbsp;</p>
+									<p align="center" id="weak_level" class="level_text">弱</p>
+									<div id="weak" class="level"></div>
+								</div>
+								<div class="level_box">
+									<p align="center" id="middle_space" class="level_space">&nbsp;</p>
+									<p align="center" id="middle_level" class="level_text">中</p>
+									<div id="middle" class="level"></div>
+								</div>
+								<div class="level_box">
+									<p align="center" id="strong_space" class="level_space">&nbsp;</p>
+									<p align="center" id="strong_level" class="level_text">强</p>
+									<div id="strong" class="level"></div>
+								</div>
+							</div>
+						</li>
+						<!-- 确认密码框 -->
+							<li id="password_input" class="update_psd_list_item">
+							<input type="password" name="define_password" id="input_define_password" value="" maxlength="25"
+								class="input_box" placeholder="确认密码" />
+						</li>
+						<!-- 准则勾选 -->
+						<li id="allow_rule">
+							<input type="checkbox" name="allow_role" id="check_allow" value="0" />
+							<span id="rule_text">我已阅读并同意遵守<a href="#" id="exam_rule">《隐私政策》</a>和<a href="#" id="exam_rule">《用户协议》</a></span>
+						</li>
+						<!-- 登录按钮 -->
+						<li id="login_button">
+							<input type="button" name="login" id="button_update" value="确认修改" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
